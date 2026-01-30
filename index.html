@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
     <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
     <!-- optional CDN for Foundation Icons ^^ -->
+     <style>
+  /* Responsive YouTube embed */
+  .video-wrap{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 14px;
+  }
+  .video-wrap iframe{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
   </head>
   <body>
     <!-- Info Banner For Announcements or Links -->
@@ -76,11 +93,29 @@
     <article class="grid-container">
         <div class="grid-x grid-margin-x" id="content">
           <div class="medium-9 cell">
-            <div class="blog-post">
-              <h3>Introduction to SQL <small>3/6/2016</small></h3>
-              <img class="thumbnail" src="https://placehold.it/850x350">
-              <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-  
+          <div class="blog-post" style="padding-bottom:22px; border-bottom:1px solid #e6e6e6; margin-bottom:22px;">
+
+  <h3>Start Here: Introduction to SQL <small>Lesson 1</small></h3>
+
+  <p style="margin-bottom:14px;">
+    This is the first video in my SQL beginner series. Watch this one first, then move on to the chapters below.
+  </p>
+
+  <div class="video-wrap">
+    <iframe
+      src="https://www.youtube.com/embed/RtT62A6PcFA"
+      title="Introduction to SQL - Coding with Liz"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <p style="margin-top:14px;">
+    Want the notes + practice problems? Check the <a href="sql.html">SQL</a> category.
+  </p>
+</div>
+
             </div>
     
             <div class="blog-post">
